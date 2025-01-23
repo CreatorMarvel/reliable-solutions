@@ -11,7 +11,13 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "../ui/button";
 
-const items = [
+interface Items {
+	title: string;
+	description: string;
+	image: string;
+}
+
+const items: Items[] = [
 	{
 		title: "Electrical Wiring and Installation Services",
 		description:
@@ -37,7 +43,7 @@ const items = [
 export function HeroSection() {
 	const plugin = React.useRef(
 		Autoplay({
-			delay: 3000,
+			delay: 3000, // Change slides after 3sec
 			stopOnInteraction: true,
 			rootNode: (emblaRoot) => emblaRoot.parentElement,
 		})
@@ -62,8 +68,8 @@ export function HeroSection() {
 									alt={`Slide ${index + 1} background`}
 									style={{
 										borderRadius: "none",
-										height: "500px",
 										width: "100%",
+										height: "500px",
 										objectFit: "cover",
 									}}
 								/>
@@ -80,11 +86,11 @@ export function HeroSection() {
 										variant="outline"
 										className="border-none text-white font-bold hover:text-black transition-colors inline-block w-[100px]"
 									>
-										{"Learn more"}
+										Learn more
 									</Button>
 								</div>
-								<CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-								<CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+								<CarouselPrevious className="absolute bg-transparent text-white p-8 left-4 top-1/2 -translate-y-1/2" />
+								<CarouselNext className="absolute p-8 bg-transparent text-white right-4 top-1/2 -translate-y-1/2" />
 							</CardContent>
 						</Card>
 					</CarouselItem>

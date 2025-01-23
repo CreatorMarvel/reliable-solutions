@@ -47,9 +47,9 @@ const services: Services[] = [
 
 export function ServicesSection() {
 	return (
-		<section className="py-44 bg-gray-50">
+		<section className="md:py-44 py-32 bg-gray-50">
 			<div className="container mx-auto px-4">
-				<h2 className="text-6xl text-center mb-20 font-bold">
+				<h2 className="text-4xl lg:text-6xl text-center mb-20 font-bold">
 					Our{" "}
 					<span
 						style={{
@@ -59,7 +59,7 @@ export function ServicesSection() {
 						Services
 					</span>
 				</h2>
-				<div className="space-y-36 w-[80%] m-auto">
+				<div className="space-y-52 w-[80%] m-auto">
 					{services.map((service, index) => (
 						<ServicesCard index={index} service={service} />
 					))}

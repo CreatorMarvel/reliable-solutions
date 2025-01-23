@@ -9,25 +9,25 @@ import {
 
 function About() {
 	return (
-		<div className="border-0 w-[80%] m-auto pt-44">
-			<div className={`flex flex-col lg:flex-row-reverse`}>
-				<div className="md:w-1/2 shadow-none w-full flex items-center">
+		<div className="border-0 lg:pt-44 pt-28">
+			<div className="flex flex-col lg:flex-row-reverse">
+				<div className="lg:w-1/2 shadow-none w-[80%] m-auto p-14">
 					<img
 						src={
 							"https://images.unsplash.com/photo-1668097613572-40b7c11c8727?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						}
 						style={{
 							width: "100%",
-							height: "400px",
+							height: "380px",
 							borderRadius: "5px",
 							boxShadow: "0 0 24px rgba(0, 0, 0, 0.1)",
 						}}
 						className="w-full object-cover"
 					/>
 				</div>
-				<div className="md:w-1/2 flex flex-col justify-center p-8">
+				<div className="lg:w-1/2 w-[80%] m-auto flex flex-col justify-center p-8">
 					<CardHeader>
-						<CardTitle className="text-6xl font-bold mb-4">
+						<CardTitle className="text-5xl lg:text-6xl font-bold mb-4">
 							Reliable Solutions Trading
 						</CardTitle>
 					</CardHeader>
@@ -59,7 +59,10 @@ function About() {
 							<strong>2024/208592/07</strong> as well as with most
 							service-relevant regulatory bodies
 						</CardDescription>
-						<Button size={"lg"} className="flex items-center mt-4 w-[140px]">
+						<Button
+							size={"lg"}
+							className="flex items-center mt-4 w-[140px] p-8"
+						>
 							<Phone style={{ color: "var(--primary-blue)" }} /> Call now
 						</Button>
 					</CardContent>

@@ -36,7 +36,7 @@ export default function MenuBar(props: Props) {
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
 			<Typography variant="h6" sx={{ my: 2 }}>
-				MUI
+				Reliable Solutions
 			</Typography>
 			<Divider />
 			<List>
@@ -57,7 +57,10 @@ export default function MenuBar(props: Props) {
 	return (
 		<Box sx={{ display: "flex" }}>
 			<CssBaseline />
-			<AppBar component="nav" sx={{ backgroundColor: "var(--primary-blue)" }}>
+			<AppBar
+				component="nav"
+				sx={{ backgroundColor: "var(--primary-blue)", padding: "0.8rem" }}
+			>
 				<Toolbar>
 					<IconButton
 						color="inherit"
@@ -66,18 +69,23 @@ export default function MenuBar(props: Props) {
 						onClick={handleDrawerToggle}
 						sx={{ mr: 2, display: { sm: "none" } }}
 					>
-						<MenuIcon />
+						<MenuIcon sx={{ fontSize: "2.4rem" }} />
 					</IconButton>
 					<Typography
 						variant="h6"
 						component="div"
-						sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+						sx={{
+							flexGrow: 1,
+							display: { xs: "none", sm: "block" },
+							cursor: "pointer",
+							textTransform: "uppercase",
+						}}
 					>
-						MUI
+						Reliable Solutions
 					</Typography>
 					<Box sx={{ display: { xs: "none", sm: "block" } }}>
 						{navItems.map((item) => (
-							<Button key={item} sx={{ color: "#fff" }}>
+							<Button key={item} sx={{ color: "#fff", fontSize: "1.2rem" }}>
 								{item}
 							</Button>
 						))}

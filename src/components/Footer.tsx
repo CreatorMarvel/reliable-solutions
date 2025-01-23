@@ -3,8 +3,8 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 export function Footer() {
 	return (
 		<footer className="bg-gray-100 pt-16 pb-8">
-			<div className="container w-[80%] mx-auto px-4">
-				<div className="flex text-center flex-wrap justify-between mb-8 ">
+			<div className="container w-[90%] mx-auto px-4">
+				<div className="flex flex-wrap text-center justify-between mb-8 ">
 					<div className="w-full md:w-1/3 mb-8 md:mb-0">
 						<h3 className="text-2xl font-semibold mb-4">About Us</h3>
 						<p className="text-lg leading-relaxed text-gray-600 mb-2">
@@ -25,13 +25,13 @@ export function Footer() {
 						<p className="text-lg text-gray-600 mb-2">
 							Email: leratoseboks@gmail.com
 						</p>
-						<p className="text-lg text-gray-600">Phone: (067) 291-3764</p>
+						<p className="text-lg text-gray-600">Phone: (076) 996-7842</p>
 
 						<h6 className="mt-6 text-xl">Operations Director</h6>
 						<p className="text-lg text-gray-600 mb-2">
 							Email: sebokoloditidimalo93@gmail.com
 						</p>
-						<p className="text-lg text-gray-600">Phone: (076) 996-7842</p>
+						<p className="text-lg text-gray-600">Phone: (067) 291-3764</p>
 					</div>
 					<div className="w-full md:w-1/3">
 						<h3 className="text-2xl font-semibold mb-4">Navigation</h3>

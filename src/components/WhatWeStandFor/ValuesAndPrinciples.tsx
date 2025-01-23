@@ -28,8 +28,8 @@ const cardData = [
 
 export function ValuesAndPrinciples() {
 	return (
-		<div className="p-44">
-			<h4 className="text-6xl text-center mb-24 font-bold">
+		<div className="md:p-44 p-32">
+			<h4 className="text-4xl lg:text-6xl text-center mb-24 font-bold">
 				What we stand for in the{" "}
 				<span style={{ color: "var(--primary-blue)" }}>trading</span> business
 			</h4>

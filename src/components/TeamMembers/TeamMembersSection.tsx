@@ -26,9 +26,9 @@ const teamMembers: TeamMembers[] = [
 
 export function TeamMembersSection() {
 	return (
-		<section className="py-44">
+		<section className="md:py-44 py-32">
 			<div className="container mx-auto px-4">
-				<h2 className="text-6xl text-center mb-20 font-bold">
+				<h2 className="text-4xl lg:text-6xl text-center mb-20 font-bold">
 					Our{" "}
 					<span
 						style={{
@@ -39,7 +39,7 @@ export function TeamMembersSection() {
 					</span>{" "}
 					Members
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-lg md:max-w-3xl mx-auto">
 					{teamMembers.map((member, index) => (
 						<TeamMemberCard
 							key={index}

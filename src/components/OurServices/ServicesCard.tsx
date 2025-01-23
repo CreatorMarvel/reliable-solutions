@@ -28,13 +28,13 @@ function ServicesCard({ service, index }: Service) {
 					index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
 				}`}
 			>
-				<div className="md:w-1/2">
+				<div className="md:w-1/2 overflow-hidden">
 					<img
 						src={service.image || "/placeholder.svg"}
 						alt={service.imageAlt}
 						width={600}
 						height={400}
-						className="w-full h-full object-cover"
+						className="w-full h-full object-cover service-image"
 					/>
 				</div>
 				<div className="md:w-1/2 flex flex-col justify-center p-8">

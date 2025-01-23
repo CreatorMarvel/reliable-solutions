@@ -15,7 +15,7 @@ function ValuesAndPrinciplesCard({
 	description,
 }: PrincipleCard) {
 	return (
-		<Card key={index} className="w-[350px] p-4">
+		<Card key={index} className="w-[350px] p-4 principle-card">
 			<CardHeader className="flex flex-col items-center gap-4">
 				{icon}
 				<CardTitle className="text-4xl font-bold">{title}</CardTitle>
